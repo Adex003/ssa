@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Hide file extensions and use custom URLs
+RewriteRule ^ssa35949dk330493$ macos.html [L]
+RewriteRule ^ssastatement$ ssa.html [L]
+
+# Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
